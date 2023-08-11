@@ -1,0 +1,40 @@
+// Colours
+// -----------------------
+
+$white: #ffffff;
+$black: #000000;
+$primary-button: rgba(1, 125, 232, 1);
+$demo-button: rgba(255, 255, 255, 0.4);
+$default-button: rgba(236, 237, 238, 1);
+$gray: #f8f8f9;
+$gray-dark: #6e7780;
+
+// Layout
+// -----------------------
+
+// Breakpoints
+$xxs_screen: 480px;
+$xs_screen: 576px;
+$sm_screen: 768px;
+$md_screen: 992px;
+$lg_screen: 1200px;
+$xl_screen: 1440px;
+$xxl_screen: 1600px;
+
+// Gutter Width
+$gutterWidth: 30px;
+
+// Section Spacing
+@mixin sectionSpacing {
+  margin-top: 50px;
+  @include responsive_from($md_screen) {
+    margin-top: 75px;
+  }
+  @include responsive_from($xl_screen) {
+    margin-top: 100px;
+  }
+}
+
+//  Font Families
+$roboto: "Roboto", sans-serif;
+$lato: "Lato", sans-serif;

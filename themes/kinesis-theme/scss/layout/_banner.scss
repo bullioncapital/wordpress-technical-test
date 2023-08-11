@@ -1,0 +1,73 @@
+.banner {
+  width: 100%;
+  min-height: 900px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  .grid {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border: 0px;
+
+    @include twelveColumnGrid;
+    @include containerWidth;
+
+    .content {
+      //grid-column: span 12;
+      position: relative;
+      color: $white;
+
+      h2 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .buttons {
+        margin-top: 2rem;
+        a {
+          text-decoration: none !important;
+          color: $white !important;
+
+          &.start {
+            background: $primary-button;
+            color: white;
+            padding: 9px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+          }
+
+          &.demo {
+            background: $demo-button;
+            color: white;
+            padding: 9px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+          }
+        }
+      }
+
+      &.left_align {
+        grid-column: span 12;
+
+        @include responsive_from($md_screen) {
+          grid-column: 1/7;
+        }
+      }
+
+      &.full_width {
+        grid-column: span 12;
+      }
+    }
+  }
+}

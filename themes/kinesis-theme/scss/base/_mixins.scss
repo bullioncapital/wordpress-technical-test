@@ -1,0 +1,74 @@
+/* = Mixins
+ * -----------------------------------------------
+ *	- Media Queries
+ *  - Clearfix
+ *  - Container Max Width
+ * ----------------------------------------------- */
+
+// -- Media Queries
+// --------------------------------
+
+@mixin responsive_to($breakpoint) {
+  @media only screen and (max-width: $breakpoint - 1) {
+    @content;
+  }
+}
+
+@mixin responsive_from($breakpoints...) {
+  @if length($breakpoints) == 1 {
+    @media only screen and (min-width: nth($breakpoints, 1)) {
+      @content;
+    }
+  } @else {
+    $minbreakpoint: nth($breakpoints, 1);
+    $maxbreakpoint: nth($breakpoints, 2);
+    @media only screen and (min-width: $minbreakpoint) and (max-width: $maxbreakpoint - 1) {
+      @content;
+    }
+  }
+}
+
+// -- Container Max Width
+// --------------------------------
+
+@mixin containerWidth {
+  width: 100%;
+
+  padding-left: $gutterWidth;
+  padding-right: $gutterWidth;
+
+  @include responsive_from($xs_screen, $sm_screen) {
+    max-width: $xs_screen;
+  }
+  @include responsive_from($sm_screen, $md_screen) {
+    max-width: $sm_screen;
+  }
+  @include responsive_from($md_screen, $lg_screen) {
+    max-width: $md_screen;
+  }
+  @include responsive_from($lg_screen, $xl_screen) {
+    max-width: $lg_screen;
+  }
+  @include responsive_from($xl_screen, $xxl_screen) {
+    max-width: $xl_screen;
+  }
+  @include responsive_from($xxl_screen) {
+    max-width: $xxl_screen;
+  }
+}
+
+// -- 12-Column Grid (CSS Grid)
+// --------------------------------
+
+@mixin twelveColumnGrid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: auto;
+  -moz-column-gap: 0px;
+  column-gap: 0px;
+  @include responsive_from($xs_screen) {
+    -moz-column-gap: $gutterWidth;
+    column-gap: $gutterWidth;
+  }
+  row-gap: $gutterWidth;
+}

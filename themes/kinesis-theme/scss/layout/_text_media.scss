@@ -1,0 +1,251 @@
+.textMedia {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $white;
+  display: block;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  .grid {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border: 0px;
+
+    @include twelveColumnGrid;
+    @include containerWidth;
+
+    .text_media {
+      grid-column: 1/13;
+      display: grid;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      @include twelveColumnGrid;
+
+      .text {
+        grid-column: 1/13;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        // vertically middle
+
+        @include responsive_from($md_screen) {
+          grid-column: 1/7;
+          top: 10%;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          line-height: 60px;
+          color: $black;
+          margin: 20px 0px;
+          padding: 0;
+        }
+
+        p {
+          font-size: 1.125rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $gray-dark;
+          margin: 0;
+          padding: 0;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-dark;
+            margin: 2rem 0;
+            padding: 0;
+            display: block;
+            position: relative;
+
+            .list_icon {
+              width: 30px;
+              height: 30px;
+              display: inline;
+              position: absolute;
+              margin: 0 2rem 0 0;
+              padding: 0;
+              vertical-align: middle;
+              top: 10px;
+            }
+
+            .list_text {
+              width: calc(100% - 30px);
+              height: auto;
+              display: inline;
+              position: relative;
+              margin: 0;
+              padding: 0;
+              vertical-align: middle;
+
+              h4 {
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: $black;
+                margin: 0;
+                padding: 0;
+                padding-left: 4rem;
+              }
+
+              p {
+                padding-left: 4rem;
+                color: $gray-dark;
+              }
+            }
+          }
+        }
+      }
+
+      .media {
+        grid-column: 1/13;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        @include responsive_from($md_screen) {
+          grid-column: 7/13;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .media_text {
+      grid-column: 1/13;
+      display: grid;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      @include twelveColumnGrid;
+
+      .media {
+        grid-column: 1/13;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+
+        @include responsive_from($md_screen) {
+          grid-column: 1/17;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          position: relative;
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .text {
+        grid-column: 1/13;
+        display: block;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        // vertically middle
+
+        @include responsive_from($md_screen) {
+          grid-column: 7/13;
+          top: 10%;
+        }
+
+        h2 {
+          font-size: 2.5rem;
+          font-weight: 500;
+          line-height: 60px;
+          color: $black;
+          margin: 20px 0px;
+          padding: 0;
+        }
+
+        p {
+          font-size: 1.125rem;
+          font-weight: 400;
+          line-height: 1.5;
+          color: $gray-dark;
+          margin: 0;
+          padding: 0;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+
+          li {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $gray-dark;
+            margin: 2rem 0;
+            padding: 0;
+            display: block;
+            position: relative;
+
+            .list_icon {
+              width: 30px;
+              height: 30px;
+              display: inline;
+              position: absolute;
+              margin: 0 2rem 0 0;
+              padding: 0;
+              vertical-align: middle;
+              top: 10px;
+            }
+
+            .list_text {
+              width: calc(100% - 30px);
+              height: auto;
+              display: inline;
+              position: relative;
+              margin: 0;
+              padding: 0;
+              vertical-align: middle;
+
+              h4 {
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: $black;
+                margin: 0;
+                padding: 0;
+                padding-left: 4rem;
+              }
+
+              p {
+                padding-left: 4rem;
+                color: $gray-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
