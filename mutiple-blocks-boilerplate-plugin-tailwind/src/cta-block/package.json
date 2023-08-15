@@ -1,0 +1,32 @@
+{
+  "name": "boilerplate-block-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel sync wpstart tailwindwatch",
+    "sync": "browser-sync start -p '' --files '**/*.php' 'build/*.js' 'build/*.css'",
+    "build": "npm-run-all --sequential buildwp tailwindbuild",
+    "buildwp": "wp-scripts build ./index.js ./frontend.js --output-path=../../build/cta-block",
+    "wpstart": "wp-scripts start ./index.js ./frontend.js --output-path=../../build/cta-block",
+    "start": "npm-run-all --parallel wpstart tailwindwatch",
+    "tailwindbuild": "tailwindcss -i ./index.css -o ../../build/cta-block/index.css --postcss --minify",
+    "tailwindwatch": "tailwindcss -i ./index.css -o ../../build/cta-block/index.css --watch --postcss --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^23.3.0",
+    "autoprefixer": "^10.4.7",
+    "browser-sync": "^2.27.10",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-nested": "^5.0.6",
+    "tailwindcss": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
