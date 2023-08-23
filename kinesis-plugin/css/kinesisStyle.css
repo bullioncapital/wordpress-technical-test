@@ -1,0 +1,27 @@
+.hero-custom-background {
+  background-image: url("https://github.com/bullioncapital/wordpress-technical-test/blob/main/assets/images/Hero.png?raw=true");
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  margin: 0px !important;
+}
+
+.cta-custom-background {
+  background-image: url("https://github.com/bullioncapital/wordpress-technical-test/blob/main/assets/images/CTA.jpg?raw=true");
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+#masthead,
+.entry-header,
+.site-footer,
+.entry-footer {
+  display: none !important;
+}
+
+.entry-content,
+.page {
+  margin: 0em 0 0 !important;
+  padding: 0em 0 0 !important;
+}
