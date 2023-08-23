@@ -1,45 +1,58 @@
-# wordpress-technical-test
-This is the Repo for the Wordpress Technical Test
+# Kinesis Plugin
 
-# Quick Links
-1. [Test brief](#test-brief)
-2. [Requirments](#requirements)
-4. [Pricing table](#pricing-table)
-5. [Design](#design)
-6. [Assets](#assets)
+This is a WordPress plugin that adds custom blocks and Tailwind CSS styling to your site.
+This plugin developed using the tailpress plugin to fetch the `Tailwind CSS styling`.
 
-# Test Brief
-The purpose of this test is for us to see what kind of developer you are. 
+## Important Note
 
-The task is simple, follow instructions where required and show initiative where you can. 
+This is a basic starter plugin that allows to create custom blocks, but requires further development before it is ready for use.
 
-This test shouldn’t take more than a couple of hours. 
+## Description
 
-It will require varied frontend and backend skills.
+The Kinesis plugin provides the following:
 
-TLDR; convert the following design into a wordpress page.
+- Tailwind CSS framework loaded for styling
+- Custom Gutenberg blocks can be found in `src/components/`:
+  - Hero banner
+  - Call to action (CTA)
+  - Pricing table
+  - Zigzag section
+  - Perks section
+- Custom styling for the blocks using Tailwind utilities `css/kinesisStyle.css`
 
-![PNG of the design](Design.png)
+## Usage
 
-# Requirements
-The task is to create this page in wordpress using a custom built plugin to generate the blocks for the page. You can rely on the use of other plugins if necessary.
+![PNG of the Blocks](gutenberg-blocks.png)
 
-Each section of this page should be built as a block allowing them to be moved around the page without breaking and allow for multiple instances of the blocks on the same page.
+After installing and activating the plugin:
 
-The page should be fully responsive, the responsive design has not been provided please use best judgement.
+1. Edit a page or post in the block editor
+2. Add any of the custom blocks from the inserter
+3. Customize the content and styling using the block controls
+4. Publish and view the front-end to see the styled blocks
 
-# Pricing Table
-The pricing table shown in the design should pull through dynamic content. To do this you can use a free CoinMarketCap api. 
+The Hero banner block can be used at the top of pages as an eye-catching header.
 
-https://coinmarketcap.com/api/. You can use any API for this as long as it provides all data shown in the design.
+The Pricing table block lets you showcase latest crypto prices.
 
-# Design
-The design can be found here. https://www.figma.com/file/PuLjccv9evn1GTTHrsDKvu/Dev-tech-test?type=design&node-id=1-8702&mode=design&t=fU8P48P5jqDeUxyv-0
+The Zigzag and Perks blocks help you create sectioned content with images and text.
 
-If you haven't already, sign up for a free Figma account, so you can work with the design.
-*(You may only need to do this if you are unable to view the design straight away)*.
+The CTA block allows you to easily add a call to action button.
 
-# Assets
-All image and icon assets can be found in the assets folder:
+Utilize these new blocks along with Tailwind classes to build beautiful pages!
 
-https://github.com/bullioncapital/wordpress-technical-test/tree/main/assets
+## Installation
+
+1. Upload the plugin `/wp-content/plugins/` directory
+2. Activate the plugin through the Plugins screen in WordPress
+3. Use the blocks when editing pages and posts!
+
+## Customization
+
+The blocks can be modified by editing the React components in the `src/components` folder.
+Additional css styles can be added in `css/kinesisStyle.css`.
+
+## Developer
+
+This plugin was created by [Abbas Yusuf](https://github.com/abbasyusuf).
+And inspired by freshbrewedweb - tailpress (Tailwind css)
