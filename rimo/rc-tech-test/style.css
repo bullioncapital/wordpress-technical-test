@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --font-xs: 14px;
+  --font-s: 16px;
+  --font-m: 18px;
+  --font-l: 24px;
+  --font-xl: 48px;
+  --font-xxl: 64px;
+}
+
+.h1,
+h1 {
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: -3.2px;
+}
+
+.h2,
+h2 {
+  font-size: var(--font-xl);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -2.1px;
+}
+
+.h4,
+h4 {
+  font-size: var(--font-l);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+
+.p1 {
+  font-size: var(--font-m);
+  font-weight: 400;
+  line-height: 1.44;
+}
+
+.p2 {
+  font-size: var(--font-s);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: var(--midnight);
+  font-weight: 400;
+}
+
+#header,
+#footer,
+#page > hr {
+  display: none;
+}
+
+:root {
+  --midnight: #0D1D2C;
+  --midnight-5: #192837;
+  --midnight-40: #6E7780;
+  --midnight-90: #E7E8EA;
+  --midnight-92: #ECEDEE;
+  --midnight-97: #F8F8F9;
+  --success: #28A745;
+  --critical: #DA202D;
+  --azure: #017DE8;
+  --white: #fff;
+  --container-width: 1060px;
+  --container-width-wide: 1280px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 9px 16px 11px 16px;
+  margin-right: 8px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  color: var(--white);
+}
+.button:last-child {
+  margin-right: 0;
+}
+.button--primary {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), #017DE8;
+  background-blend-mode: soft-light, normal;
+}
+.button--primary:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%), #017DE4;
+}
+.button--secondary {
+  background-color: var(--midnight-5);
+}
+.button--secondary:hover {
+  background-color: var(--midnight-40);
+}
+.button--tertiary {
+  background-color: var(--midnight-92);
+  color: var(--midnight);
+}
+.button--tertiary:hover {
+  background-color: var(--midnight-40);
+}
+.button--arrow {
+  color: var(--azure);
+  padding: 0;
+}
+.button--arrow:after {
+  content: url("data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMiAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkFycm93UmlnaHQiPgo8cGF0aCBpZD0iVmVjdG9yIiBkPSJNNy4yNzI2IDIuMDA3MDhMNy4zNDgzNCAyLjA2MzE5TDExLjM1OCA1LjQzODE5QzExLjY5MDMgNS43MTc4OSAxMS43MTI0IDYuMjE0MSAxMS40MjQ0IDYuNTIyNjdMMTEuMzU4IDYuNTg1NzdMNy4zNDgzNCA5Ljk2MDc3QzcuMDMxNDQgMTAuMjI3NSA2LjU1ODMxIDEwLjE4NjggNi4yOTE1NyA5Ljg2OTk1QzYuMDQ1MzUgOS41Nzc0MyA2LjA2MTA2IDkuMTUxNzkgNi4zMTQxOCA4Ljg3ODI0TDYuMzgyMzkgOC44MTMxOUw4Ljc4MzI1IDYuNzkxMjFMMS4xMjUgNi43OTEzOEMwLjcxMDc4NiA2Ljc5MTM4IDAuMzc1IDYuNDU1NTkgMC4zNzUgNi4wNDEzOEMwLjM3NSA1LjY1Njc1IDAuNjY0NTMgNS4zMzk3NSAxLjAzNzUzIDUuMjk2NDJMMS4xMjUgNS4yOTEzOEw4Ljg1NDUgNS4yOTEyMUw2LjM4MjM5IDMuMjEwNzdDNi4wODk4NyAyLjk2NDU1IDYuMDMyNzMgMi41NDI0NyA2LjIzNTQ2IDIuMjI5NzVMNi4yOTE1NyAyLjE1NDAxQzYuNTM3NzkgMS44NjE0OSA2Ljk1OTg3IDEuODA0MzQgNy4yNzI2IDIuMDA3MDhaIiBmaWxsPSIjMDE3REU4Ii8+CjwvZz4KPC9zdmc+Cg==");
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  top: 2px;
+  left: 0;
+  transition: left 0.25s ease;
+}
+.button--arrow:hover:after {
+  left: 5px;
+}
+.button-wrap {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map*/

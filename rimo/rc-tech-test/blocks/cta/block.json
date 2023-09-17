@@ -1,0 +1,14 @@
+{
+    "name": "acf/cta",
+    "title": "CTA",
+    "description": "Full width CTA block.",
+    "category": "kinesis",
+    "icon": "layout",
+    "keywords": ["cta"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "style": "file:./style.css",
+    "align": "full"
+}

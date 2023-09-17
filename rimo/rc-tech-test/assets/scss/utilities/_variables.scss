@@ -1,0 +1,20 @@
+:root {
+    --midnight: #0D1D2C;
+    --midnight-5: #192837;
+    --midnight-40: #6E7780;
+    --midnight-90: #E7E8EA;
+    --midnight-92: #ECEDEE;
+    --midnight-97: #F8F8F9;
+    --success: #28A745;
+    --critical: #DA202D;
+    --azure: #017DE8;
+    --white: #fff;
+    --container-width: 1060px;
+    --container-width-wide: 1280px;
+}
+
+$breakpoints: (
+    's': 480px,
+    'm': 768px,
+    'l': 1024px
+);

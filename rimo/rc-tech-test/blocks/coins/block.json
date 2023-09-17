@@ -1,0 +1,15 @@
+{
+    "name": "acf/coins",
+    "title": "Coins",
+    "description": "Crypto coin price scanner.",
+    "category": "kinesis",
+    "icon": "layout",
+    "keywords": ["coins", "prices", "crypto"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "style": "file:./style.css",
+    "align": "full",
+    "script": ["coins", "coins-graph"]
+}

@@ -1,0 +1,14 @@
+{
+    "name": "acf/text-and-list",
+    "title": "Text and list",
+    "description": "Text and list in 2 column layout block.",
+    "category": "kinesis",
+    "icon": "layout",
+    "keywords": ["text", "list"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "style": "file:./style.css",
+    "align": "full"
+}

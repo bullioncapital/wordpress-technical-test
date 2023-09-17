@@ -1,0 +1,14 @@
+{
+    "name": "acf/tiles",
+    "title": "Tiles",
+    "description": "Three columns of info tiles.",
+    "category": "kinesis",
+    "icon": "layout",
+    "keywords": ["tiles", "columns"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "style": "file:./style.css",
+    "align": "full"
+}

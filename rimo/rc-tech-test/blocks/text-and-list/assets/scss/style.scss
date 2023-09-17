@@ -1,0 +1,58 @@
+@import '../../../../assets/scss/base/base';
+@import '../../../../assets/scss/utilities/utilities';
+
+.text-and-list {
+    padding: 135px 20px;
+
+    &__container {
+        max-width: var(--container-width);
+        margin: 0 auto;
+
+        @include breakpoint('m') {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__right {
+        display: none;
+
+        @include breakpoint('m') {
+            display: block;
+        }
+    }
+
+    &__left-inner {
+        max-width: 510px;
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: var(--midnight-40);
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        margin-bottom: 40px;
+    }
+
+    &__list-item {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    &__list-item-text {
+        color: var(--midnight-40);
+    }
+}

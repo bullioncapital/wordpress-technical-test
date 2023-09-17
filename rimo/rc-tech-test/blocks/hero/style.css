@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --font-xs: 14px;
+  --font-s: 16px;
+  --font-m: 18px;
+  --font-l: 24px;
+  --font-xl: 48px;
+  --font-xxl: 64px;
+}
+
+.h1,
+h1 {
+  font-size: var(--font-xxl);
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: -3.2px;
+}
+
+.h2,
+h2 {
+  font-size: var(--font-xl);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -2.1px;
+}
+
+.h4,
+h4 {
+  font-size: var(--font-l);
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+
+.p1 {
+  font-size: var(--font-m);
+  font-weight: 400;
+  line-height: 1.44;
+}
+
+.p2 {
+  font-size: var(--font-s);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  color: var(--midnight);
+  font-weight: 400;
+}
+
+#header,
+#footer,
+#page > hr {
+  display: none;
+}
+
+:root {
+  --midnight: #0D1D2C;
+  --midnight-5: #192837;
+  --midnight-40: #6E7780;
+  --midnight-90: #E7E8EA;
+  --midnight-92: #ECEDEE;
+  --midnight-97: #F8F8F9;
+  --success: #28A745;
+  --critical: #DA202D;
+  --azure: #017DE8;
+  --white: #fff;
+  --container-width: 1060px;
+  --container-width-wide: 1280px;
+}
+
+.hero {
+  min-height: 100vh;
+  height: 900px;
+  background: url(/assets/images/hero.png) var(--midnight) no-repeat center -50%;
+  background-size: cover;
+  color: var(--white);
+  padding: 80px 20px;
+}
+.hero__sub-heading {
+  text-transform: uppercase;
+  color: var(--midnight-40);
+  font-size: var(--font-s);
+}
+.hero__heading {
+  margin-bottom: 24px;
+}
+.hero__blurb {
+  color: var(--midnight-40);
+  margin-bottom: 40px;
+}
+.hero__container {
+  margin: 0 auto;
+  max-width: var(--container-width);
+}
+.hero__container-inner {
+  max-width: 620px;
+}
+
+/*# sourceMappingURL=style.css.map*/
