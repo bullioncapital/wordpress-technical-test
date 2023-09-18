@@ -1,0 +1,14 @@
+{
+    "name": "acf/hero",
+    "title": "Hero",
+    "description": "Hero block.",
+    "category": "kinesis",
+    "icon": "layout",
+    "keywords": ["hero"],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "template.php"
+    },
+    "style": "file:./style.css",
+    "align": "full"
+}

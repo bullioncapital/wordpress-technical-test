@@ -1,0 +1,22 @@
+@import '../../../../assets/scss/base/base';
+@import '../../../../assets/scss/utilities/utilities';
+
+.cta-block {
+    padding: 188px 20px;
+    color: var(--white);
+    background: url(/assets/images/cta.jpg) var(--midnight) no-repeat center center;
+    background-size: cover;
+
+    &__container {
+        margin: 0 auto;
+        max-width: var(--container-width);
+    }
+
+    &__container-inner {
+        max-width: 510px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+}

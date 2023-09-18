@@ -1,0 +1,37 @@
+@import '../../../../assets/scss/base/base';
+@import '../../../../assets/scss/utilities/utilities';
+
+.hero {
+    min-height: 100vh;
+    height: 900px;
+    background: url(/assets/images/hero.png) var(--midnight) no-repeat center -50%;
+    background-size: cover;
+    color: var(--white);
+    padding: 80px 20px;
+
+    &__sub-heading {
+        text-transform: uppercase;
+        color: var(--midnight-40);
+        font-size: var(--font-s);
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+    }
+
+    &__blurb {
+        color: var(--midnight-40);
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        margin: 0 auto;
+        max-width: var(--container-width);
+    }
+
+    &__container-inner {
+        max-width: 620px;
+    }
+
+
+}

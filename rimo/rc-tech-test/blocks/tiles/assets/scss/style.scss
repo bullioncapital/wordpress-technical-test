@@ -1,0 +1,66 @@
+@import '../../../../assets/scss/base/base';
+@import '../../../../assets/scss/utilities/utilities';
+
+.tiles {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: var(--midnight-97);
+
+    &__container,
+    &__heading,
+    &__text {
+        margin: 0 auto;
+    }
+
+    &__container {
+        max-width: var(--container-width-wide);
+    }
+
+    &__heading {
+        max-width: 840px;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        max-width: 620px;
+        color: var(--midnight-40);
+        margin-bottom: 56px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        gap: 40px;
+        margin-bottom: 56px;
+
+        @include breakpoint('m') {
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+    }
+
+    &__list-item {
+        padding: 48px 24px;
+        background: var(--white);
+        border-radius: 8px;
+
+        svg {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__list-item-heading {
+        margin-bottom: 16px;
+    }
+
+    &__list-item-text {
+        color: var(--midnight-40);
+    }
+
+    &__button-wrap {
+        justify-content: center;
+    }
+}

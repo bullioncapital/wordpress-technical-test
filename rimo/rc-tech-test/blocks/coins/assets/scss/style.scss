@@ -1,0 +1,146 @@
+@import '../../../../assets/scss/base/base';
+@import '../../../../assets/scss/utilities/utilities';
+
+.coins {
+    padding: 80px 20px;
+    text-align: center;
+
+    &__container {
+        margin: 0 auto;
+        max-width: var(--container-width-wide);
+    }
+
+    &__heading {
+        margin-bottom: 56px;
+    }
+
+    &__table {
+        text-align: left;
+        width: 100%;
+
+        th,
+        td {
+            padding: 12px 24px;
+            font-size: var(--font-s);
+            line-height: 1.57;
+            vertical-align: middle;
+            border-bottom: 1px solid var(--midnight-90);
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+            background-color: var(--white);
+
+            &:first-child {
+                left: 0;
+                z-index: 11;
+            }
+        }
+
+        td {
+            color: var(--midnight-40);
+
+            &:first-child {
+                background-color: var(--white);
+                position: sticky;
+                left: 0;
+                z-index: 10;
+            }
+
+            &.down {
+                color: var(--critical);
+            }
+
+            &.up {
+                color: var(--success);
+            }
+        }
+    }
+
+    &__coin {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-right: 8px;
+    }
+
+    &__symbol {
+        font-weight: 700;
+        color: var(--midnight);
+        margin-right: 8px;
+    }
+
+    &__tab-selectors {
+        display: none;
+
+        @include breakpoint('m') {
+            margin-bottom: 40px;
+            display: block;
+        }
+    }
+
+    &__tab-selector {
+        display: inline-block;
+        padding: 8px 16px 12px;
+        margin: 0 -2px;
+        color: var(--midnight-40);
+        font-weight: 700;
+        border-bottom: 2px solid var(--midnight-90);
+        transition: border .25s ease;
+        cursor: pointer;
+
+        &:hover,
+        &--active {
+            color: var(--midnight);
+            border-color: var(--azure);
+        }
+    }
+
+    &__tab-contents {
+        overflow: scroll;
+        max-width: 100vw;
+        max-height: 60vh;
+        margin-bottom: 56px;
+    }
+
+    &__tab-content {
+        opacity: 0;
+
+        &--loaded {
+            opacity: 1;
+
+            @include breakpoint('m') {
+                visibility: hidden;
+                position: absolute;
+                width: 0;
+                height: 0;
+                overflow: hidden;
+            }
+        }
+
+        &--active {
+
+            @include breakpoint('m') {
+                visibility: visible;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                overflow: visible;
+            }
+        }
+    }
+
+    &__graph,
+    &__graph div,
+    &__graph svg {
+        max-height: 45px !important;
+        max-width: 175px !important;
+    }
+
+    &__button-wrap {
+        justify-content: center;
+    }
+}

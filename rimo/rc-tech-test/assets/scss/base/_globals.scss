@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    color: var(--midnight);
+    font-weight: 400;
+}
+
+#header,
+#footer,
+#page > hr {
+    display: none;
+}
