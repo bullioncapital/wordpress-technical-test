@@ -1,6 +1,9 @@
 # wordpress-technical-test
 This is the Repo for the Wordpress Technical Test
 
+To submit the test you can fork this repo and create a PR, *(Remember to include your database)*.
+If you have any issues accessing the Repo please reach out.
+
 # Quick Links
 1. [Test brief](#test-brief)
 2. [Requirments](#requirements)
