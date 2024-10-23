@@ -134,27 +134,9 @@ function Edit({
         className: "row",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
           className: "icon",
-          children: row.icon.url ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
-              src: row.icon.url,
-              alt: `Row Icon ${index + 1}`
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-              className: "button button-large",
-              onClick: () => removeRowImage(index),
-              isDestructive: true,
-              children: "Remove Image"
-            })]
-          }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.MediaUpload, {
-            onSelect: media => onSelectRowImage(index, media),
-            allowedTypes: ['image'],
-            value: row.icon.id,
-            render: ({
-              open
-            }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
-              onClick: open,
-              className: "button button-large",
-              children: "Select Row Image"
-            })
+          children: row.icon.url && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("img", {
+            src: row.icon.url,
+            alt: `Row Icon ${index + 1}`
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
           className: "content flex-column",
@@ -269,14 +251,14 @@ const blockAttributes = {
     type: 'array',
     default: [{
       icon: {
-        url: '',
+        url: 'https://9-sec.com/abx/wp-content/uploads/2024/10/DebitCard.png',
         id: 0
       },
       title: 'Lorem ipsum dolor sit',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.'
     }, {
       icon: {
-        url: '',
+        url: 'https://9-sec.com/abx/wp-content/uploads/2024/10/Group.png',
         id: 0
       },
       title: 'Lorem ipsum dolor sit',
@@ -377,23 +359,9 @@ function save({
         })]
       }, index)), link && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         className: "link",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("a", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
           href: link,
-          children: ["Sign Up", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("span", {
-            class: " elementor-animation-",
-            style: " margin-left: 24px; width: 36px;\n",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("svg", {
-              "aria-hidden": "true",
-              class: "e-font-icon-svg e-fas-arrow-right",
-              viewBox: "0 0 448 512",
-              xmlns: "http://www.w3.org/2000/svg",
-              fill: "currentColor",
-              style: " width: 16px;\n",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("path", {
-                d: "M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-              })
-            }), "    "]
-          })]
+          children: "Sign Up"
         })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {

@@ -42,7 +42,7 @@ const blockAttributes = {
         default: [
             {
                 icon: {
-                    url: '',
+                    url: 'https://9-sec.com/abx/wp-content/uploads/2024/10/DebitCard.png',
                     id: 0
                 },
                 title: 'Lorem ipsum dolor sit',
@@ -50,7 +50,7 @@ const blockAttributes = {
             },
             {
                 icon: {
-                    url: '',
+                    url: 'https://9-sec.com/abx/wp-content/uploads/2024/10/Group.png',
                     id: 0
                 },
                 title: 'Lorem ipsum dolor sit',

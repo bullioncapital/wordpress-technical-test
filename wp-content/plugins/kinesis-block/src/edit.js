@@ -92,29 +92,9 @@ export default function Edit({ attributes, setAttributes }) {
                 {rowItems.map((row, index) => (
                     <div className="row" key={index}>
                         <div className="icon">
-                            {row.icon.url ? (
-                                <div>
-                                    <img src={row.icon.url} alt={`Row Icon ${index + 1}`} />
-                                    <Button
-                                        className="button button-large"
-                                        onClick={() => removeRowImage(index)}
-                                        isDestructive
-                                    >
-                                        Remove Image
-                                    </Button>
-                                </div>
-                            ) : (
-                                <MediaUpload
-                                    onSelect={(media) => onSelectRowImage(index, media)}
-                                    allowedTypes={['image']}
-                                    value={row.icon.id}
-                                    render={({ open }) => (
-                                        <Button onClick={open} className="button button-large">
-                                            Select Row Image
-                                        </Button>
-                                    )}
-                                />
-                            )}
+                            {row.icon.url &&
+                                 <img src={row.icon.url} alt={`Row Icon ${index + 1}`} />
+                            }
                         </div>
                         <div className="content flex-column">
                             <TextControl
