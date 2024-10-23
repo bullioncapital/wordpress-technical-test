@@ -1,0 +1,97 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-kinesis-block {
+	border: 1px dotted #f00;
+    background: transparent;
+    color: black;
+}
+
+$primary-color: #007cba;
+/* Style for the main container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+    .half {
+        width: 48%;
+    }
+
+    .right-image {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .icon {
+            margin-right: 15px;
+            width: 50px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .content {
+            flex: 1;
+
+            h3 {
+                margin: 0;
+                font-size: 1.25em;
+            }
+
+            p {
+                margin: 0;
+                color: #555;
+            }
+        }
+    }
+
+    .link {
+        margin-top: 30px;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 10px;
+
+        .half {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .right-image img {
+            max-width: 80%;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+    }
+}
+

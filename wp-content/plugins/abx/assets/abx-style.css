@@ -1,0 +1,99 @@
+.danger{color:red;text-align:center}
+.overlay{
+	visibility: hidden;
+	height: 100%;
+    width: 100%;
+    background: #b4dde14f;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+	align-items: center;
+	justify-content: center;
+    display: flex;
+	min-height:500px
+}
+.overlay img{
+	width:100px;height:100px
+}
+
+.max-width .elementor-widget-shortcode {
+    width: 95%;
+}
+.coin-table{
+overflow-x: auto;
+}
+.crypto-table {
+  width: 80%;
+  margin: 50px auto;
+  vertical-align: middle;
+  
+}
+.crypto-table thead:first-child tr:first-child th {
+border:none;
+}
+.coin-table table {
+ width: 100%;
+background:transparent;
+   overflow-x: auto;
+
+}
+
+.crypto-table thead {
+	vertical-align: middle;
+}
+
+.crypto-table  th,.crypto-table  td {
+  background-color: #fff;
+  padding: 15px;
+  text-align: justify;
+	border:none;
+border-bottom: 1px solid #ddd;
+	vertical-align: middle;
+color: #6E7780;
+width:25%
+}
+
+.crypto-table  th {
+  font-weight: bold;
+}
+.coin-symbol{
+  font-weight: bold;
+}
+.ver-mid span{
+margin-right:10px
+}
+.crypto-table  tr:nth-child(even) {
+
+}
+.crypto-table tbody>tr:nth-child(odd)>td, table tbody>tr:nth-child(odd)>th{
+background:transparent;
+}
+.crypto-table .coin-img img {
+width:36px;vertical-align:middle
+}
+
+.crypto-table .coin-img img {
+width:36px;
+}
+
+.crypto-table  .price {
+  font-weight: bold;
+}
+
+.crypto-table .positive {
+  color: #28A745;
+;
+}
+
+.crypto-table .negative {
+  color:#DA202D;
+}
+
+.crypto-table .stable {
+  color: #666;
+}
+
+.crypto-table .change {
+  font-weight: bold;
+}
+ 

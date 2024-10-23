@@ -1,0 +1,85 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-kinesis-block {
+  border: 1px dotted #f00;
+  background: transparent;
+  color: black;
+}
+
+/* Style for the main container */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  /* Media Queries for Responsive Design */
+}
+.flex-container .half {
+  width: 48%;
+}
+.flex-container .right-image {
+  text-align: center;
+}
+.flex-container .right-image img {
+  max-width: 100%;
+  height: auto;
+}
+.flex-container .row {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.flex-container .row .icon {
+  margin-right: 15px;
+  width: 50px;
+}
+.flex-container .row .icon img {
+  max-width: 100%;
+  height: auto;
+}
+.flex-container .row .content {
+  flex: 1;
+}
+.flex-container .row .content h3 {
+  margin: 0;
+  font-size: 1.25em;
+}
+.flex-container .row .content p {
+  margin: 0;
+  color: #555;
+}
+.flex-container .link {
+  margin-top: 30px;
+}
+.flex-container .link a {
+  text-decoration: none;
+  color: #007cba;
+  font-weight: bold;
+}
+.flex-container .link a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .flex-container .half {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .flex-container .right-image img {
+    max-width: 80%;
+  }
+  .flex-container .row {
+    margin-bottom: 15px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map*/

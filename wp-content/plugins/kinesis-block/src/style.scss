@@ -1,0 +1,133 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-kinesis-block {
+	width:100%
+}
+
+$primary-color: #007cba;
+/* Style for the main container */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+
+
+    .half {
+        width: 48%;
+		min-height:500px;    flex-direction: column;
+    
+p{
+	padding: 10px 0 0px 0;
+    color: #6E7780;
+    font-family: "Lato", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+h2{
+    color: #0D1D2C;
+    font-family: "Lato", Sans-serif;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 60px;
+padding: 10px 0 10px 0;
+}
+h3{
+    margin: 0;
+    font-size: 1.25em;
+
+}
+div{
+padding: 10px 0 10px 0;
+}
+}
+.align-center {
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Center horizontally */
+}
+
+    .right-image {
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+
+        .icon {
+            margin-right: 15px;
+            width: 65px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .content {
+            flex: 1;
+
+            h3 {
+                margin: 0;
+                font-size: 1.25em;
+            }
+
+            p {
+                margin: 0;
+                color: #555;
+            }
+        }
+    }
+
+    .link {
+        margin-top: 30px;
+
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: bold;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+		span {
+		     margin-left: 24px;
+  			 width: 36px;
+			
+		}
+		
+    }
+
+    /* Media Queries for Responsive Design */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding: 10px;
+
+        .half {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .right-image img {
+            max-width: 80%;
+        }
+
+        .row {
+            margin-bottom: 15px;
+        }
+    }
+}
